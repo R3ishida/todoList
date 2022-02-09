@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8359e107df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p id="date">2022/2/8（Tue）</p>
+    <div class="grid-container">
+        <div class="grid-item grid-item1" id="today_list">
+            <p>Today</p>
+            <div class="eventholder draggable" id="today">
+                <div class="add_button">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item grid-item2" id="tommorow_list">
+            <p>Tommorow</p>
+            <div class="eventholder draggable" id="tommorow">
+                <div class="add_button">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item grid-item3" id="thisweek_list">
+            <p>THISweek</p>
+            <div class="eventholder draggable" id="thisweek">
+                <div class="add_button">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item grid-item4" id="nextweek_list">
+            <p>NEXTweek</p>
+            <div class="eventholder draggable" id="nextweek">
+                <div class="add_button">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item grid-item5" id="later_list">
+            <p>Later...</p>
+            <div class="eventholder draggable" id="later">
+                <div class="add_button">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="kanban.js"></script>
+</html>
