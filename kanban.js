@@ -75,6 +75,15 @@ function makehtml() {
         html_code += "<div class=\"add_button\"><i class=\"fas fa-plus\"></i></div>"
         element = document.getElementById(places[i])
         element.innerHTML = html_code
+        now = new Date()
+        year = now.getFullYear()
+        month = now.getMonth()
+        date = now.getDate();
+        day = now.getDay()
+        weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+        today = `${year}/${month}/${date}（${weekday[day]}）`   
+        dateElement = document.getElementById("date")
+        dateElement.innerHTML = today
     }
 }
 
