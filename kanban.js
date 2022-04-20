@@ -77,7 +77,7 @@ function makehtml() {
         element.innerHTML = html_code
         now = new Date()
         year = now.getFullYear()
-        month = now.getMonth()
+        month = now.getMonth() + 1;
         date = now.getDate();
         day = now.getDay()
         weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
